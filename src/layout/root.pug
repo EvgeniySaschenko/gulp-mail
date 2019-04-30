@@ -1,0 +1,30 @@
+include ../../node_modules/bemto.pug/bemto.pug
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+html(lang="ru")
+	head
+		meta(http-equiv="Content-Type", content="text/html; charset=utf-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1.0")
+		link(rel="stylesheet", href="style.css")
+		title Hotline - mail
+	body
+
+		// content
+		+b.TABLE(cellpadding="0" cellspacing="0").wrapper
+			tbody
+				tr
+					td
+						+b.header
+							+b.A(href="https://hotline.ua/" target="_blank").logo
+								+e.IMG(src="https://hotline.ua/public/i/logo.png" alt="Hotline – сравнить цены в интернет-магазинах Украины").img
+				tr
+					td
+						block main
+				tr
+					td
+						+b.footer
+							+e.box-text
+								+e.box-text-item Щоб відписатися від новин про нові можливості Hotline, інформації про актуальні товари, комерційних пропозицій, натисніть 
+									+e.A(href="https://hotline.ua/profile/708616367/unsubscribe/?hash=17c67811e5da64873a42ffe466603e27" target="_blank").box-text-link тут
+								+e.box-text-item © hotline 1992 — 2019
+		// content

@@ -1,0 +1,79 @@
+@import ../../block/_index
+
+.container
+	padding: 0 6%
+
+.bp-certificate-code
+	$text: #2e576b
+	$bg: #d2dbdf
+	$bg-card: #78909c
+	font-size: 17px
+	&__row
+		width: 100%
+		&_1
+			background: $bg
+			padding: 50px 0
+		&_2
+			margin-bottom: 20px
+	&__triangle
+		width: 0
+		height: 0
+		margin-left: 10px
+		border-top: 40px solid $bg
+		border-left: 50px solid transparent
+	&__logo
+		display: table
+		margin-bottom: 30px
+		&-img
+			width: 85px
+			padding-right: 15px
+			display: table-cell
+		&-text
+			display: table-cell
+			vertical-align: middle
+			color: $text
+			font-size: 20px
+			font-weight: 700
+			text-transform: uppercase
+	&__message
+		margin-bottom: 30px
+		&-text
+			font-size: 20px
+			color: $text
+		&-link
+			font-weight: 700
+			text-transform: uppercase
+	&__card
+		height: 201px
+		width: 100%
+		max-width: 280px
+		min-width: 250px
+		background: $bg-card
+		padding: 0 7% 0 6%
+		border-radius: 10px
+		&-title
+			padding-top: 30px
+			color: #ffffff
+			margin-bottom: 15px
+		&-code
+				width: 272px
+				display: inline-block
+				text-align: center
+				font-size: 24px
+				font-weight: 700
+				color: $text-orange
+				margin-bottom: 10px
+				background: #ffffff
+				padding: 8px 0
+				border-radius: 7px
+		&-text
+			color: #ffffff
+			span
+				font-weight: 700
+				color: $text-orange
+	&__box-text
+		width: 100%
+		&-item
+			margin-bottom: 20px
+		&-link
+			text-transform: uppercase
